@@ -16,7 +16,7 @@ export default {
         }
 
         // Only /vless
-        if (url.pathname !== "/vless") {
+        if (url.pathname !== "/UrCaliforniaGEN") {
 
             return new Response(
                 "Not Found",
@@ -59,7 +59,7 @@ export default {
         const target =
             new URL(env.RAILWAY_URL);
 
-        target.pathname = "/vless";
+        target.pathname = "/UrCaliforniaGEN";
         target.search = url.search;
 
         const headers =
